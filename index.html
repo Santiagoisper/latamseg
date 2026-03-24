@@ -3,332 +3,427 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LATAM SEG — Partner oficial Veesion en Argentina. Seguridad privada con IA, detección de gestos en tiempo real, monitoreo 24/7 y custodia física profesional.">
 <title>LATAM SEG | Seguridad privada + inteligencia operativa</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-noise"></div>
-  <canvas id="grid-canvas" aria-hidden="true"></canvas>
 
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="LATAM SEG">
-      <span class="brand-mark">LS</span>
-      <span class="brand-text">
-        <strong>LATAM SEG</strong>
-        <small>Seguridad privada e inteligencia operativa</small>
-      </span>
-    </a>
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="LATAM SEG">
+        <img src="assets/latamseg-logo.png" alt="LATAM SEG" class="brand-logo">
+        <span class="brand-text">
+          <strong>LATAM SEG</strong>
+          <small>Official Veesion Partner</small>
+        </span>
+      </a>
 
-    <nav class="site-nav">
-      <a href="#capacidad">Capacidad</a>
-      <a href="#ia">IA / Veesion</a>
-      <a href="#operacion">Operacion</a>
-      <a href="#casos">Casos</a>
-      <a href="#contacto" class="nav-cta">Hablar con un asesor</a>
-    </nav>
+      <nav class="site-nav" id="site-nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#ia">IA Veesion</a>
+        <a href="#operacion">Operaci&oacute;n</a>
+        <a href="#sectores">Sectores</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="btn btn-primary nav-cta">Solicitar demo</a>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir men&uacute;" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <div class="eyebrow">
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-badge">
           <span class="pulse-dot"></span>
-          Operacion activa en Buenos Aires | Monitoreo 24/7 | Integracion con Veesion
+          Partner oficial Veesion &mdash; Argentina
         </div>
-        <h1>Seguridad privada con visualizacion operativa en tiempo real.</h1>
+
+        <h1>Prevenga el robo.<br><span class="text-accent">Act&uacute;e a tiempo.</span></h1>
+
         <p class="hero-lead">
-          Disenamos coberturas, monitoreo, control de accesos y capas de inteligencia artificial para reducir perdidas,
-          acelerar la respuesta y ordenar la toma de decisiones frente al cliente.
+          Integramos <strong>custodia f&iacute;sica</strong>, <strong>monitoreo profesional</strong> y 
+          <strong>detecci&oacute;n de gestos por IA</strong> para que su operaci&oacute;n tenga trazabilidad, 
+          criterio y respuesta antes de que el incidente ocurra.
         </p>
 
         <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Solicitar diagnostico</a>
-          <a href="#ia" class="btn btn-secondary">Ver capa IA / Veesion</a>
+          <a href="#contacto" class="btn btn-primary btn-lg">Solicitar diagn&oacute;stico</a>
+          <a href="https://www.veesion.io" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+            Ver IA Veesion
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
         </div>
+      </div>
+    </section>
 
-        <div class="hero-stat-row">
-          <article>
-            <strong>20+</strong>
-            <span>Anos de experiencia</span>
-          </article>
-          <article>
-            <strong>&lt;30s</strong>
-            <span>Ventana de alerta IA</span>
-          </article>
-          <article>
+    <!-- ═══════════════════════════════════════
+         STATS STRIP
+    ════════════════════════════════════════ -->
+    <section class="stats-section" aria-label="Estad&iacute;sticas clave">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <strong>100.000<sup>+</sup></strong>
+            <span>Gestos detectados por mes</span>
+          </div>
+          <div class="stat-item">
+            <strong>5.000<sup>+</sup></strong>
+            <span>Comercios equipados en el mundo</span>
+          </div>
+          <div class="stat-item">
+            <strong>&lt;30<sup>s</sup></strong>
+            <span>Tiempo de alerta operativa</span>
+          </div>
+          <div class="stat-item">
             <strong>24/7</strong>
-            <span>Operacion y supervision</span>
+            <span>Supervisi&oacute;n y respuesta activa</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CÓMO FUNCIONA
+    ════════════════════════════════════════ -->
+    <section class="section-how">
+      <div class="container">
+        <div class="how-layout">
+          <div class="how-copy">
+            <span class="section-tag">C&oacute;mo funciona</span>
+            <h2>Retom&aacute; el control de tu operaci&oacute;n.</h2>
+            <p>
+              LATAM SEG analiza, a trav&eacute;s de tus c&aacute;maras existentes, los gestos y comportamientos 
+              de ocultamiento. Cuando se detecta un patr&oacute;n de riesgo, tu equipo recibe un video corto 
+              en el celular para verificar r&aacute;pidamente e intervenir antes.
+            </p>
+            <p><strong>Sin reconocimiento facial. Sin impacto en tus operaciones.</strong></p>
+            <ul class="check-list">
+              <li>Entrenado para entornos retail, mes a mes</li>
+              <li>Dise&ntilde;ado para intervenci&oacute;n temprana</li>
+              <li>Reduce el robo recurrente</li>
+              <li>Efecto disuasivo comprobado a largo plazo</li>
+            </ul>
+          </div>
+          <div class="how-visual">
+            <div class="ai-screen">
+              <div class="ai-screen-header">
+                <div class="screen-dots"><i></i><i></i><i></i></div>
+                <span>Panel operativo &mdash; LATAM SEG</span>
+                <span class="screen-live"><span class="pulse-dot"></span>En vivo</span>
+              </div>
+              <img src="assets/embedded/embedded-02.png" alt="IA Veesion detectando gesto sospechoso en c&aacute;mara de seguridad">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SERVICIOS
+    ════════════════════════════════════════ -->
+    <section id="servicios" class="section-services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Servicios</span>
+          <h2>Seguridad f&iacute;sica con inteligencia operativa.<br>No son servicios separados.</h2>
+          <p>Un solo proveedor que integra presencia humana, procedimientos estandarizados, videovigilancia y detecci&oacute;n por IA con trazabilidad completa.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Seguridad f&iacute;sica</h3>
+            <p>Vigiladores presenciales para prevenci&oacute;n, detecci&oacute;n y control de riesgos en plantas, edificios, countries y retail.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Control de acceso</h3>
+            <p>Ingreso y egreso de personas y veh&iacute;culos con validaci&oacute;n, registro y presencia operativa en cada punto cr&iacute;tico.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M2 12C2 12 5 5 12 5s10 7 10 7-3 7-10 7S2 12 2 12z" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Monitoreo y CCTV</h3>
+            <p>Operadores que convierten c&aacute;maras en informaci&oacute;n accionable. Grabaci&oacute;n HD, seguimiento y coordinaci&oacute;n en tiempo real.</p>
+          </article>
+
+          <article class="service-card service-card--featured reveal">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>IA Veesion</h3>
+            <p>Detecci&oacute;n de gestos sospechosos sobre tus c&aacute;maras existentes. Sin hardware adicional. Alerta operativa en menos de 30 segundos.</p>
+            <span class="partner-badge">Partner Argentina</span>
           </article>
         </div>
       </div>
+    </section>
 
-      <div class="hero-panel reveal" data-delay="120">
-        <div class="command-card command-card-main">
-          <div class="card-head">
-            <span class="card-kicker">Command layer</span>
-            <span class="card-live">Live</span>
+    <!-- ═══════════════════════════════════════
+         IA / VEESION
+    ════════════════════════════════════════ -->
+    <section id="ia" class="section-ia section-video-bg">
+      <div class="video-bg-wrapper">
+        <video autoplay muted loop playsinline class="video-bg">
+          <source src="assets/veesion-bg.mp4" type="video/mp4">
+        </video>
+        <div class="video-bg-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-tag">Tecnolog&iacute;a</span>
+          <h2>Sin hardware adicional.<br>Operativo en d&iacute;as.</h2>
+          <p>Nada que reemplazar. Sin interrupciones. Utilizamos los algoritmos de Veesion para transformar tus c&aacute;maras actuales en un sistema de detecci&oacute;n proactiva.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-card reveal">
+            <div class="pillar-img">
+              <img src="assets/embedded/embedded-06.png" alt="Seguridad F&iacute;sica">
+              <span class="pillar-tag">Presencial</span>
+            </div>
+            <div class="pillar-body">
+              <h3>Seguridad F&iacute;sica</h3>
+              <p>Personal entrenado para control de accesos y vigilancia en planta con protocolos de respuesta inmediata.</p>
+            </div>
+          </article>
+
+          <article class="pillar-card reveal">
+            <div class="pillar-img">
+              <img src="assets/embedded/embedded-monitoring.png" alt="Centro de Monitoreo">
+              <span class="pillar-tag pillar-tag--live"><span class="pulse-dot-sm"></span>Live</span>
+            </div>
+            <div class="pillar-body">
+              <h3>Monitoreo Activo</h3>
+              <p>Control remoto de objetivos con trazabilidad total y coordinaci&oacute;n directa con fuerzas de seguridad.</p>
+            </div>
+          </article>
+
+          <article class="pillar-card pillar-card--featured reveal">
+            <div class="pillar-img">
+              <img src="assets/embedded/embedded-02.png" alt="IA Veesion">
+              <span class="pillar-tag pillar-tag--ai">AI Powered</span>
+            </div>
+            <div class="pillar-body">
+              <h3>Inteligencia Veesion</h3>
+              <p>Detecci&oacute;n autom&aacute;tica de gestos de hurto en tiempo real. Prevenci&oacute;n proactiva antes de que el evento ocurra.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         OPERACIÓN
+    ════════════════════════════════════════ -->
+    <section id="operacion" class="section-ops">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">C&oacute;mo trabajamos</span>
+          <h2>Tres capas de protecci&oacute;n.<br>Una sola lectura operativa.</h2>
+          <p>Cada incidente tiene un protocolo claro: cobertura presencial, lectura por IA y decisi&oacute;n coordinada entre operador, supervisor y cliente.</p>
+        </div>
+
+        <div class="ops-grid">
+          <div class="ops-card reveal">
+            <div class="ops-number">01</div>
+            <div class="ops-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Cobertura f&iacute;sica</h3>
+            <p>Vigiladores entrenados, protocolos definidos, rondas y presencia visible en accesos, per&iacute;metros y zonas cr&iacute;ticas.</p>
           </div>
 
-          <div class="hero-grid">
-            <article class="metric metric-gauge">
-              <div class="metric-topline">Reduccion estimada de perdidas</div>
-              <div class="gauge" style="--gauge-value: 72">
-                <div class="gauge-ring"></div>
-                <div class="gauge-core">
-                  <strong>72%</strong>
-                  <span>impacto potencial</span>
-                </div>
+          <div class="ops-card ops-card--accent reveal">
+            <div class="ops-number">02</div>
+            <div class="ops-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Detecci&oacute;n IA en tiempo real</h3>
+            <p>El sistema detecta el gesto, genera la alerta y env&iacute;a el clip de video al operador en menos de 30 segundos.</p>
+          </div>
+
+          <div class="ops-card reveal">
+            <div class="ops-number">03</div>
+            <div class="ops-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.75a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Intervenci&oacute;n coordinada</h3>
+            <p>El operador valida, el supervisor act&uacute;a y el cliente tiene visibilidad completa con trazabilidad total.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECTORES
+    ════════════════════════════════════════ -->
+    <section id="sectores" class="section-sectors">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-tag">Sectores</span>
+          <h2>Retail, log&iacute;stica, countries.<br>Donde hay riesgo, hay soluci&oacute;n.</h2>
+        </div>
+
+        <div class="sectors-grid">
+          <article class="sector-card reveal">
+            <div class="sector-img">
+              <img src="assets/embedded/embedded-country.png" alt="Control de acceso vehicular en country privado">
+            </div>
+            <div class="sector-body">
+              <span class="sector-tag">Country privado</span>
+              <h3>Acceso vehicular controlado</h3>
+              <p>Identificaci&oacute;n, registro y presencia operativa visible en el punto de entrada.</p>
+            </div>
+          </article>
+
+          <article class="sector-card reveal">
+            <div class="sector-img">
+              <img src="assets/embedded/embedded-06.png" alt="Personal de seguridad operativo en servicio">
+            </div>
+            <div class="sector-body">
+              <span class="sector-tag">Servicio presencial</span>
+              <h3>Personal entrenado en campo</h3>
+              <p>Cobertura, supervisi&oacute;n y criterio humano sostenido por tecnolog&iacute;a de &uacute;ltima generaci&oacute;n.</p>
+            </div>
+          </article>
+
+          <article class="sector-card reveal">
+            <div class="sector-img">
+              <img src="assets/embedded/embedded-monitoring.png" alt="Centro de monitoreo 24/7">
+            </div>
+            <div class="sector-body">
+              <span class="sector-tag">Centro de monitoreo</span>
+              <h3>Lectura y coordinaci&oacute;n 24/7</h3>
+              <p>Operadores, alertas IA y trazabilidad en una sola capa visual integrada y accionable.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACTO
+    ════════════════════════════════════════ -->
+    <section id="contacto" class="section-contact">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-copy reveal">
+            <span class="section-tag">Contacto</span>
+            <h2>Hablemos de tu operaci&oacute;n.<br>Propuesta en 48 horas.</h2>
+            <p>Cont&aacute;nos cu&aacute;ntos puntos ten&eacute;s, qu&eacute; tipo de riesgo enfrent&aacute;s y si ya ten&eacute;s c&aacute;maras instaladas. Con eso dise&ntilde;amos la cobertura.</p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                <span>Buenos Aires, Argentina</span>
               </div>
-            </article>
-
-            <article class="metric metric-bars">
-              <div class="metric-topline">Respuesta por capa</div>
-              <div class="bar-list">
-                <div class="bar-row">
-                  <span>Guardia</span>
-                  <div class="bar-track"><i style="--bar-size: 54%"></i></div>
-                  <strong>54</strong>
-                </div>
-                <div class="bar-row">
-                  <span>Monitoreo</span>
-                  <div class="bar-track"><i style="--bar-size: 81%"></i></div>
-                  <strong>81</strong>
-                </div>
-                <div class="bar-row">
-                  <span>IA</span>
-                  <div class="bar-track"><i style="--bar-size: 92%"></i></div>
-                  <strong>92</strong>
-                </div>
+              <div class="contact-detail">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Respuesta en 48 horas h&aacute;biles</span>
               </div>
-            </article>
-
-            <article class="metric metric-timeline">
-              <div class="metric-topline">Secuencia de intervencion</div>
-              <ol>
-                <li><span>01</span> gesto sospechoso detectado</li>
-                <li><span>02</span> alerta al operador</li>
-                <li><span>03</span> validacion humana</li>
-                <li><span>04</span> accion antes de la salida</li>
-              </ol>
-            </article>
-
-            <article class="metric metric-screen">
-              <div class="metric-topline">Feed operativo</div>
-              <div class="screen-frame">
-                <img src="assets/embedded/embedded-08.png" alt="Monitoreo operativo con IA">
-                <div class="screen-overlay">
-                  <span>CAM-01</span>
-                  <strong>Entrada principal</strong>
-                  <small>Tracking activo</small>
-                </div>
+              <div class="contact-detail">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                <span>Partner oficial Veesion Argentina</span>
               </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="capacidad" class="section-shell section-capacity">
-      <div class="section-title reveal">
-        <span class="eyebrow">Capacidad</span>
-        <h2>No vendemos horas hombre aisladas. Disenamos una arquitectura de seguridad.</h2>
-        <p>Integramos personas, procedimientos, monitoreo y lectura visual de eventos para que la operacion del cliente tenga trazabilidad, criterio y capacidad de respuesta.</p>
-      </div>
-
-      <div class="capacity-grid">
-        <article class="cap-card reveal">
-          <span class="cap-index">01</span>
-          <h3>Control de acceso</h3>
-          <p>Ingreso y egreso de personas y vehiculos con validacion, registro y presencia operativa visible.</p>
-        </article>
-        <article class="cap-card reveal" data-delay="60">
-          <span class="cap-index">02</span>
-          <h3>Monitoreo y videovigilancia</h3>
-          <p>Centros de control y operadores que convierten camaras en informacion accionable.</p>
-        </article>
-        <article class="cap-card reveal" data-delay="120">
-          <span class="cap-index">03</span>
-          <h3>Custodia y cobertura</h3>
-          <p>Dispositivos presenciales para plantas, countries, edificios, retail y eventos especiales.</p>
-        </article>
-        <article class="cap-card reveal" data-delay="180">
-          <span class="cap-index">04</span>
-          <h3>Inteligencia aplicada</h3>
-          <p>Integracion con Veesion para detectar conductas de riesgo sin reemplazar la infraestructura de camaras.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="ia" class="section-shell section-ia">
-      <div class="section-title reveal">
-        <span class="eyebrow">Capa IA</span>
-        <h2>Veesion como acelerador. LATAM SEG como operador real.</h2>
-        <p>La IA no reemplaza el criterio humano: reduce el tiempo entre gesto, alerta y respuesta. Esa diferencia cambia el resultado.</p>
-      </div>
-
-      <div class="ia-layout">
-        <article class="ia-copy reveal">
-          <div class="stacked-cards">
-            <div class="glass-card">
-              <h3>Lo que hace la IA</h3>
-              <p>Analiza gestos y microconductas sobre video existente para disparar alertas antes del hurto consumado.</p>
-            </div>
-            <div class="glass-card">
-              <h3>Lo que hace LATAM SEG</h3>
-              <p>Define protocolos, valida eventos, coordina la intervencion y adapta la tecnologia al contexto del cliente.</p>
             </div>
           </div>
 
-          <div class="mini-funnel">
-            <div><span>Deteccion</span><strong>99%</strong></div>
-            <div><span>Video corto</span><strong>&lt;30s</strong></div>
-            <div><span>Sin recableado</span><strong>0 obra</strong></div>
-          </div>
-        </article>
-
-        <article class="ia-visual reveal" data-delay="100">
-          <div class="surveillance-wall">
-            <div class="wall-head">
-              <span>Monitor IA</span>
-              <strong>Partner Veesion Argentina</strong>
+          <form class="contact-form reveal" onsubmit="event.preventDefault(); window.latamSegFormSuccess();" novalidate>
+            <div class="form-row">
+              <label>
+                <span class="label-text">Nombre completo</span>
+                <input type="text" placeholder="Juan Garc&iacute;a" required autocomplete="name">
+              </label>
+              <label>
+                <span class="label-text">Empresa</span>
+                <input type="text" placeholder="Operaci&oacute;n / cadena / edificio" autocomplete="organization">
+              </label>
             </div>
-            <div class="wall-grid wall-grid-priority-video">
-              <figure class="wide video-panel video-panel-hero">
-                <div class="video-shell">
-                  <iframe
-                    src="https://www.youtube.com/embed/2Ut7bkCcgmc?rel=0&modestbranding=1"
-                    title="Demo Veesion deteccion de gestos"
-                    loading="eager"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                  </iframe>
-                </div>
-                <div class="video-actions">
-                  <span>Demo Veesion | deteccion de gestos y alerta operativa</span>
-                  <a href="https://www.youtube.com/watch?v=2Ut7bkCcgmc" target="_blank" rel="noreferrer">Abrir video</a>
-                </div>
-              </figure>
-              <figure>
-                <img src="assets/embedded/embedded-09.png" alt="Sala de control">
-                <figcaption>CAM-02 | Sala de control</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/embedded/embedded-10.png" alt="Sector operativo">
-                <figcaption>CAM-03 | Sector B</figcaption>
-              </figure>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="operacion" class="section-shell section-ops">
-      <div class="section-title reveal">
-        <span class="eyebrow">Operacion</span>
-        <h2>Visuales que explican como trabajamos frente al cliente.</h2>
-        <p>La pagina sigue siendo comercial, pero muestra proceso, control y datos de una forma mucho mas convincente.</p>
-      </div>
-
-      <div class="ops-board reveal">
-        <div class="ops-column">
-          <span class="ops-label">Cobertura</span>
-          <h3>Dispositivo presencial</h3>
-          <p>Guardias, protocolos, puntos criticos, accesos y rondas.</p>
-        </div>
-        <div class="ops-column accent">
-          <span class="ops-label">Lectura</span>
-          <h3>Monitoreo + IA</h3>
-          <p>Video, analitica y priorizacion de eventos para accionar antes.</p>
-        </div>
-        <div class="ops-column">
-          <span class="ops-label">Decision</span>
-          <h3>Respuesta coordinada</h3>
-          <p>Operador, supervisor y cliente con una sola lectura de la situacion.</p>
+            <label>
+              <span class="label-text">Necesidad principal</span>
+              <select required>
+                <option value="" disabled selected>Seleccion&aacute; una opci&oacute;n</option>
+                <option>Control de acceso</option>
+                <option>Monitoreo y videovigilancia</option>
+                <option>IA / Veesion</option>
+                <option>Custodia y cobertura presencial</option>
+                <option>Soluci&oacute;n integral</option>
+              </select>
+            </label>
+            <label>
+              <span class="label-text">Mensaje</span>
+              <textarea rows="4" placeholder="Cont&aacute;nos qu&eacute; quer&eacute;s proteger, cu&aacute;ntas sedes ten&eacute;s y qu&eacute; problema hoy duele m&aacute;s."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-full">Enviar consulta</button>
+          </form>
         </div>
       </div>
     </section>
 
-    <section id="casos" class="section-shell section-cases">
-      <div class="section-title reveal">
-        <span class="eyebrow">Casos y escenas</span>
-        <h2>El cliente no necesita imaginar la operacion. La ve.</h2>
-      </div>
-
-      <div class="case-grid">
-        <article class="case-card reveal">
-          <img src="assets/embedded/embedded-05.png" alt="Control de acceso vehicular">
-          <div class="case-copy">
-            <span>Country privado</span>
-            <h3>Acceso vehicular controlado</h3>
-            <p>Identificacion, registro y presencia operativa visible en el punto de entrada.</p>
-          </div>
-        </article>
-        <article class="case-card reveal" data-delay="80">
-          <img src="assets/embedded/embedded-06.png" alt="Personal operativo en servicio">
-          <div class="case-copy">
-            <span>Servicio presencial</span>
-            <h3>Personal entrenado</h3>
-            <p>Cobertura, supervision y criterio humano sostenido por tecnologia.</p>
-          </div>
-        </article>
-        <article class="case-card reveal" data-delay="160">
-          <img src="assets/embedded/embedded-11.png" alt="Monitoreo operativo">
-          <div class="case-copy">
-            <span>Centro de monitoreo</span>
-            <h3>Lectura y coordinacion 24/7</h3>
-            <p>Operadores, alertas y trazabilidad en una sola capa visual.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contacto" class="section-shell section-contact">
-      <div class="contact-shell reveal">
-        <div>
-          <span class="eyebrow">Contacto</span>
-          <h2>Disenamos tu cobertura con criterio operativo y una capa visual mucho mas fuerte.</h2>
-          <p>Mostranos la operacion, la cantidad de puntos y el nivel de riesgo. Te devolvemos propuesta y enfoque.</p>
-        </div>
-
-        <form class="contact-form" onsubmit="event.preventDefault(); window.latamSegFormSuccess();">
-          <label>
-            Nombre
-            <input type="text" placeholder="Juan Garcia" required>
-          </label>
-          <label>
-            Empresa
-            <input type="text" placeholder="Operacion / cadena / edificio">
-          </label>
-          <label>
-            Necesidad principal
-            <select>
-              <option>Control de acceso</option>
-              <option>Monitoreo y videovigilancia</option>
-              <option>IA / Veesion</option>
-              <option>Custodia y cobertura</option>
-            </select>
-          </label>
-          <label>
-            Mensaje
-            <textarea rows="4" placeholder="Contanos que queres proteger, cuantas sedes tenes y que problema hoy duele mas."></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary btn-submit">Enviar consulta</button>
-        </form>
-      </div>
-    </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div>
-      <strong>LATAM SEG</strong>
-      <span>Seguridad Privada SRL | Buenos Aires | Argentina</span>
-    </div>
-    <div>
-      <span>Partner Veesion | Monitoreo 24/7 | Dispositivos a medida</span>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/latamseg-logo.png" alt="LATAM SEG" class="footer-logo">
+          <div>
+            <strong>LATAM SEG</strong>
+            <span>Seguridad Privada SRL<br>Buenos Aires, Argentina</span>
+          </div>
+        </div>
+
+        <nav class="footer-links">
+          <div>
+            <strong>Servicios</strong>
+            <a href="#servicios">Seguridad f&iacute;sica</a>
+            <a href="#servicios">Control de acceso</a>
+            <a href="#servicios">Monitoreo CCTV</a>
+            <a href="#ia">IA Veesion</a>
+          </div>
+          <div>
+            <strong>Empresa</strong>
+            <a href="#operacion">C&oacute;mo trabajamos</a>
+            <a href="#sectores">Sectores</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </nav>
+
+        <div class="footer-partner">
+          <span>Partner oficial</span>
+          <strong class="text-accent">Veesion</strong>
+          <small>Argentina</small>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 LATAM SEG &mdash; Seguridad Privada SRL</span>
+        <span>Partner Veesion &bull; Operaci&oacute;n 24/7 &bull; Buenos Aires</span>
+      </div>
     </div>
   </footer>
 

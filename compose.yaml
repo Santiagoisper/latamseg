@@ -1,0 +1,12 @@
+services:
+  latamseg:
+    build:
+      context: .
+    ports:
+      - "3122:80"
+    environment:
+      NODE_ENV: development
+      HOST: 0.0.0.0
+      HOSTNAME: 0.0.0.0
+      PORT: "80"
+    restart: unless-stopped
